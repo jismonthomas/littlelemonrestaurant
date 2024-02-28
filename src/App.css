@@ -39,9 +39,13 @@ h6 {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+p {
+    line-height: 1.5;
+}
 .container {
     margin: 0 auto;
-    max-width: 860px;
+    max-width: 1400px;
 }
 
 .mainNavigation .container,
@@ -102,7 +106,7 @@ header.home a {
     font-weight: 500;
     padding: 1rem 1.5rem;
     border-radius: 16px;
-    margin-top: 0rem;
+    margin-top: 2rem;
     transition: all 300ms ease-out;
 }
 
@@ -120,7 +124,8 @@ header.home img {
     border-radius: 10px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 100%;
     aspect-ratio: 16/12;
     object-fit: cover;
@@ -172,4 +177,7 @@ footer img {
 }
 
 @media only screen and (max-width: 1399.98px) {
+    .container {
+        max-width: 991px;
+    }
 }

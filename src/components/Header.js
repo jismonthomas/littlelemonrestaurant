@@ -9,8 +9,10 @@ const Header = () => {
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
                     <p>
-                        we are a family owned Mediterranean restaurant, focused
-                        on traditional recipes served with a modern twist.
+                        Indulge in the Authentic Tastes of the Mediterranean at
+                        Our Family-Owned Restaurant. Our Culinary Journey blends
+                        Time-Honored Recipes with a Modern Touch, offering a
+                        Fusion of Tradition and Innovation in Every Savory Dish.
                     </p>
                     <Link to={`/reservation`}>Reserve Table</Link>
                 </div>
