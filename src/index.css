@@ -1,13 +1,54 @@
+::root {
+    --primary-color: #495e57;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 16px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.mainNavigation,
+footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNavigation ul,
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mainNavigation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.mainNavigation a,
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* footer */
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
 }
