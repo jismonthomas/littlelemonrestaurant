@@ -1,28 +1,29 @@
 import logo from '../images/Logo.svg';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
         <nav className="mainNavigation">
             <div className="container">
-                <a href="/">
+                <Link to="/">
                     <img src={logo} alt="little lemon logo" />
-                </a>
+                </Link>
 
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/#">About</a>
+                        <Link to="/#">About</Link>
                     </li>
                     <li>
-                        <a href="/#">Menu</a>
+                        <Link to="/#">Menu</Link>
                     </li>
                     <li>
-                        <a href="/reservations">Reservations</a>
+                        <Link to="/reservations">Reservations</Link>
                     </li>
                     <li>
-                        <a href="/#">Contact</a>
+                        <Link to="/#">Contact</Link>
                     </li>
                 </ul>
             </div>
