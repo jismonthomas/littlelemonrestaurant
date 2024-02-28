@@ -1,7 +1,14 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ReservationPage from './pages/ReservationPage.js';
 
 const Main = () => {
-    return <div>Main</div>;
+    return (
+        <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/reservations" element={<ReservationPage />}></Route>
+        </Routes>
+    );
 };
 
 export default Main;

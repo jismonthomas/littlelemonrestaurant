@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+:root {
+    --primaryColor: #495e57;
+    --primaryYellow: #f4ce14;
+    --primaryPeach: #ee9972;
+    --primaryPeachLight: #fbdabb;
+
+    --light: #edefee;
+    --dark: #333333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* .karla-<uniquifier> {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
   }
+ .markazi-text-<uniquifier> {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Markazi Text', serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.container {
+    margin: 0 auto;
+    max-width: 860px;
 }
 
-.App-link {
-  color: #61dafb;
+.mainNavigation .container,
+footer .container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainNavigation ul,
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mainNavigation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.mainNavigation a,
+footer a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+/* header */
+
+header.home {
+    color: var(--light);
+    background-color: var(--primaryColor);
+    padding: 4rem 1rem;
+}
+
+header.home .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+header.home h1 {
+    color: var(--primaryYellow);
+    font-size: 5rem;
+    margin: 0;
+    line-height: 0.5;
+}
+
+header.home h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header.home a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primaryYellow);
+    color: var(--dark);
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+    margin-top: 0rem;
+    transition: all 300ms ease-out;
+}
+
+header.home a:hover {
+    background-color: var(--primaryPeach);
+}
+
+header.home .image-container {
+    position: relative;
+    min-width: 50%;
+}
+
+header.home img {
+    max-height: calc(100% + 4rem + 3rem);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    aspect-ratio: 16/12;
+    object-fit: cover;
+}
+/* footer */
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    color: white;
+    background-color: var(--primaryColor);
+}
+
+footer img {
+    width: 150px;
+    height: 100%;
+}
+
+@media screen and (max-width: 575.98px) {
+}
+
+@media screen and (max-width: 767.98px) {
+}
+
+@media screen and (max-width: 991.98px) {
+    .mainNavigation .container,
+    footer .container {
+        flex-direction: column;
+    }
+
+    header.home .container {
+        flex-direction: column;
+    }
+
+    header.home img {
+        position: static;
+        max-height: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+}
+
+@media only screen and (max-width: 1399.98px) {
 }
