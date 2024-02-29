@@ -40,6 +40,11 @@ h6 {
     font-style: normal;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 p {
     line-height: 1.5;
 }
@@ -72,6 +77,14 @@ footer a {
     color: var(--primaryColor);
 }
 
+.mainNavigation a {
+    font-weight: 600;
+    transition: color 300ms ease-out;
+}
+
+.mainNavigation a:hover {
+    color: var(--dark);
+}
 /* header */
 
 header.home {
@@ -98,19 +111,22 @@ header.home h2 {
     font-size: 2.5rem;
 }
 
-header.home a {
+header.home a,
+.weeklySpecialItems article a {
     display: inline-block;
+    font-size: 1.1rem;
     text-decoration: none;
     background-color: var(--primaryYellow);
     color: var(--dark);
-    font-weight: 500;
+    font-weight: 600;
     padding: 1rem 1.5rem;
     border-radius: 16px;
     margin-top: 2rem;
     transition: all 300ms ease-out;
 }
 
-header.home a:hover {
+header.home a:hover,
+.weeklySpecialItems article a:hover {
     background-color: var(--primaryPeach);
 }
 
@@ -121,7 +137,7 @@ header.home .image-container {
 
 header.home img {
     max-height: calc(100% + 4rem + 3rem);
-    border-radius: 10px;
+    border-radius: 16px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -129,6 +145,49 @@ header.home img {
     max-width: 100%;
     aspect-ratio: 16/12;
     object-fit: cover;
+}
+
+/* weekly specials */
+.weeklySpecials {
+    padding: 5rem;
+}
+
+.weeklySpecials h1 {
+    font-size: 3rem;
+}
+
+.weeklySpecialItems {
+    display: flex;
+    gap: 3rem;
+}
+
+.weeklySpecialItems article {
+    flex-basis: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--light);
+}
+
+.weeklySpecialItems article .content {
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+.weeklySpecialItems article img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+.weeklySpecialItems article h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.weeklySpecialItems article a {
+    background-color: var(--primaryYellow);
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 16px;
 }
 /* footer */
 footer ul li {
@@ -170,6 +229,12 @@ footer img {
         max-height: 500px;
         margin: 0 auto;
         display: block;
+        transform: translateX(0%);
+    }
+
+    .weeklySpecials {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
@@ -179,5 +244,9 @@ footer img {
 @media only screen and (max-width: 1399.98px) {
     .container {
         max-width: 991px;
+    }
+
+    .weeklySpecialItems {
+        flex-direction: column;
     }
 }
