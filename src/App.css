@@ -153,7 +153,8 @@ header.home img {
 }
 
 .weeklySpecials h1,
-.customerReviews h1 {
+.customerReviews h1,
+.aboutUs h1 {
     font-size: 3rem;
 }
 
@@ -176,7 +177,7 @@ header.home img {
 .weeklySpecialItems article img {
     object-fit: cover;
     width: 100%;
-    height: 350px;
+    height: 250px;
 }
 
 .weeklySpecialItems article h2 {
@@ -242,6 +243,30 @@ header.home img {
     font-size: 12px;
 }
 
+/* about us */
+
+.aboutUs {
+    background-color: var(--primaryPeachLight);
+    padding: 5rem;
+}
+
+.aboutUs .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.aboutUs h1 {
+    margin-bottom: 0;
+}
+
+.aboutUs img {
+    max-height: 30vh;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: top;
+}
+
 /* footer */
 footer ul li {
     margin-bottom: 10px;
@@ -254,6 +279,14 @@ footer ul li:last-child {
 footer {
     color: white;
     background-color: var(--primaryColor);
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--primaryYellow);
 }
 
 footer img {
@@ -285,7 +318,8 @@ footer img {
         transform: translateX(0%);
     }
 
-    .weeklySpecials {
+    .weeklySpecials,
+    .aboutUs {
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -296,6 +330,10 @@ footer img {
 
     .review {
         max-width: 100%;
+    }
+
+    .aboutUs .container {
+        flex-direction: column;
     }
 }
 
