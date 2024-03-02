@@ -14,7 +14,7 @@ const Header = () => {
                         Time-Honored Recipes with a Modern Touch, offering a
                         Fusion of Tradition and Innovation in Every Savory Dish.
                     </p>
-                    <Link to={`/reservation`}>Reserve Table</Link>
+                    <Link to={`/reservations`}>Reserve Table</Link>
                 </div>
                 <div className="image-container">
                     <img

@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ReservationPage from './pages/ReservationPage.js';
 import ConfirmationPage from './pages/ConfirmationPage.js';
+import MenuPage from './pages/MenuPage.js';
+import AboutPage from './pages/AboutPage.js';
 
 const initializeTimes = () => {
     return ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
@@ -22,6 +24,8 @@ const Main = () => {
     return (
         <Routes>
             <Route path="/" element={<HomePage />}></Route>
+            <Route path="/menu" element={<MenuPage />}></Route>
+            <Route path="/about" element={<AboutPage />}></Route>
             <Route
                 path="/reservations"
                 element={

@@ -1,4 +1,5 @@
 import logo from '../images/footer-logo.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,19 +11,16 @@ const Footer = () => {
                     <h2>Navigation</h2>
                     <ul>
                         <li>
-                            <a href="/#">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="/#">About</a>
+                            <Link to="/about">About</Link>
                         </li>
                         <li>
-                            <a href="/#">Menu</a>
+                            <Link to="/menu">Menu</Link>
                         </li>
                         <li>
-                            <a href="/#">Reservations</a>
-                        </li>
-                        <li>
-                            <a href="/#">Contact</a>
+                            <Link to="/reservations">Reservations</Link>
                         </li>
                     </ul>
                 </div>
@@ -30,8 +28,8 @@ const Footer = () => {
                 <div>
                     <h2>Contact</h2>
                     <ul>
-                        <li>line 1</li>
-                        <li>line 2</li>
+                        <li>Little Lemon Restaurant</li>
+                        <li>Chicago</li>
                     </ul>
                 </div>
 

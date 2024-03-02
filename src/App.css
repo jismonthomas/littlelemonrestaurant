@@ -168,7 +168,8 @@ header.home img {
     flex-basis: 100%;
     border-radius: 16px;
     overflow: hidden;
-    background-color: var(--light);
+    background-color: var(--primaryColor);
+    color: var(--light);
 }
 
 .weeklySpecialItems article .content {
@@ -300,7 +301,8 @@ footer img {
 /* forms */
 
 .bookingForm,
-.confirmation {
+.confirmation,
+.menuPage {
     background-color: var(--light);
 }
 
@@ -385,6 +387,11 @@ form .overlay {
 .submitButton:hover {
     color: var(--light);
     background-color: var(--primaryPeach);
+}
+
+.AboutPage {
+    min-height: 70vh;
+    background-color: var(--primaryPeachLight);
 }
 
 @media screen and (max-width: 575.98px) {
