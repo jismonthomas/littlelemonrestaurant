@@ -1,10 +1,13 @@
-import React from 'react';
+import BookingForm from '../BookingForm';
 
-const ReservationPage = () => {
+const ReservationPage = ({ availableTimes, updateTimes }) => {
     return (
         <>
             {/* reservation header here */}
-            ReservationPage
+            <BookingForm
+                availableTimes={availableTimes}
+                updateTimes={updateTimes}
+            />
         </>
     );
 };
