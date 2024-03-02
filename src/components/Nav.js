@@ -1,5 +1,6 @@
 import logo from '../images/Logo.svg';
 import { Link } from 'react-router-dom';
+import MobileMenu from './MobileMenu';
 
 const Nav = () => {
     return (
@@ -9,7 +10,9 @@ const Nav = () => {
                     <img src={logo} alt="little lemon logo" />
                 </Link>
 
-                <ul>
+                <MobileMenu />
+
+                <ul className="desktopMenu">
                     <li>
                         <Link to="/">Home</Link>
                     </li>
