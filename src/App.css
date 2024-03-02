@@ -392,7 +392,12 @@ form .overlay {
     border: none;
 }
 
-.submitButton:hover {
+.submitButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.submitButton:hover:not(:disabled) {
     color: var(--light);
     background-color: var(--primaryPeach);
 }

@@ -167,6 +167,13 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
                     </div>
 
                     <input
+                        disabled={
+                            formik.errors.guests ||
+                            formik.errors.time ||
+                            formik.errors.date ||
+                            formik.errors.email ||
+                            formik.errors.name
+                        }
                         aria-label="On Click"
                         type="submit"
                         value="Confirm My Reservation"
